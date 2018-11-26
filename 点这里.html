@@ -1,0 +1,31 @@
+<DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<script src="jquery.js">
+	</script>
+<body>
+
+<h1>在线一键做梦</h1>
+
+<p id="cute">你是A</p>
+<p id="cool">你是O</p>
+
+
+<script>
+$( "#cool" ).click(function() {     
+   var x = 7;     
+   var y = 1;     
+   var rand = parseInt(Math.random() * (x - y + 1) + y);  
+   var url = 'url(images_A/'+rand+'.jpg) no-repeat center';
+   $("body").css('background',url);
+});
+$( "#cute" ).click(function() {     
+   var x = 6;     
+   var y = 1;     
+   var rand = parseInt(Math.random() * (x - y + 1) + y);  
+   var url = 'url(images_O/'+rand+'.jpg) no-repeat center';
+   $("body").css('background',url);
+});
+</script>
+</body>
+</html>
